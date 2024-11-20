@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Return Book</h1>
+    </header>
+
+    <div class="container">
+        <form class="form-container" id="returnBookForm">
+            <label for="bookId">Book ID</label>
+            <input type="text" id="bookId" class="input-field" placeholder="Enter book ID" required>
+
+            <label for="returnDate">Return Date</label>
+            <input type="date" id="returnDate" class="input-field" required>
+
+            <button type="submit" class="submit-btn" id="returnBtn">Return Book</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Library Management System © 2024</p>
+    </footer>
+
+    <script>
+        document.getElementById("returnBookForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Book returned successfully!");
+        });
+    </script>
+</body>
+</html>

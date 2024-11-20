@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Book</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Update Book Details</h1>
+    </header>
+
+    <div class="container">
+        <form class="form-container" id="updateBookForm">
+            <label for="bookId">Book ID</label>
+            <input type="text" id="bookId" class="input-field" placeholder="Enter Book ID" required>
+
+            <label for="newTitle">New Title</label>
+            <input type="text" id="newTitle" class="input-field" placeholder="Enter new title" required>
+
+            <label for="newAuthor">New Author</label>
+            <input type="text" id="newAuthor" class="input-field" placeholder="Enter new author name" required>
+
+            <label for="newYear">New Publication Year</label>
+            <input type="number" id="newYear" class="input-field" placeholder="Enter new publication year" required>
+
+            <button type="submit" class="submit-btn" id="updateBtn">Update Book</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Library Management System © 2024</p>
+    </footer>
+
+    <script>
+        document.getElementById("updateBookForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Book updated successfully!");
+        });
+    </script>
+</body>
+</html>

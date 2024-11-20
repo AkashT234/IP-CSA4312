@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Book</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Issue Book to Student</h1>
+    </header>
+
+    <div class="container">
+        <form class="form-container" id="issueBookForm">
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" class="input-field" placeholder="Enter student ID" required>
+
+            <label for="bookId">Book ID</label>
+            <input type="text" id="bookId" class="input-field" placeholder="Enter book ID" required>
+
+            <label for="issueDate">Issue Date</label>
+            <input type="date" id="issueDate" class="input-field" required>
+
+            <button type="submit" class="submit-btn" id="issueBtn">Issue Book</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Library Management System © 2024</p>
+    </footer>
+
+    <script>
+        document.getElementById("issueBookForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Book issued to student!");
+        });
+    </script>
+</body>
+</html>

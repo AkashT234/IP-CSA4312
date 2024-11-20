@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Fines</title>
+    <link rel="stylesheet" href="css/user.css">
+    <script src="js/user.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Check and Pay Fines</h1>
+    </header>
+
+    <div class="container">
+        <div class="fine-card">
+            <h2>Your Fines</h2>
+            <div class="fine-details">
+                <p>You have overdue books with the following fines:</p>
+                <table class="fine-table">
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Fine Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Introduction to Algorithms</td>
+                            <td>$2.00</td>
+                        </tr>
+                        <tr>
+                            <td>Data Structures and Algorithms</td>
+                            <td>$1.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="total-fine">
+                    <p><strong>Total Fine: $3.50</strong></p>
+                    <button class="pay-btn" id="payFine">Pay Fine</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Library Management System © 2024</p>
+    </footer>
+
+    <script>
+        document.getElementById("payFine").addEventListener("click", function() {
+            alert("Your fine has been paid successfully!");
+        });
+    </script>
+</body>
+</html>

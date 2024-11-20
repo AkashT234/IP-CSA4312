@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Book</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/admin.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Add New Book</h1>
+    </header>
+
+    <div class="container">
+        <form class="form-container" id="addBookForm">
+            <label for="bookTitle">Book Title</label>
+            <input type="text" id="bookTitle" class="input-field" placeholder="Enter book title" required>
+
+            <label for="author">Author</label>
+            <input type="text" id="author" class="input-field" placeholder="Enter author name" required>
+
+            <label for="publicationYear">Publication Year</label>
+            <input type="number" id="publicationYear" class="input-field" placeholder="Enter publication year" required>
+
+            <label for="genre">Genre</label>
+            <input type="text" id="genre" class="input-field" placeholder="Enter genre" required>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Add Book</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Library Management System © 2024</p>
+    </footer>
+
+    <script>
+        document.getElementById("addBookForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Book added successfully!");
+        });
+    </script>
+</body>
+</html>
